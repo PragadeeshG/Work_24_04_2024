@@ -1,0 +1,15 @@
+create table if not exists authentication_method_certificate(
+auth_id integer not null,
+cert_file_name varchar(255) null,
+cert_file_type varchar(255) null,
+cert_path varchar(255) null,
+alias varchar(255) null,
+pass_code varchar(255) null,
+truststore varchar(255) null,
+truststore_pass varchar(255) null,
+cert_key varchar(255) null,
+cert_key_alias varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint authentication_method_certificate_pk primary key(auth_id));
